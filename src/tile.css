@@ -1,0 +1,39 @@
+h1{
+    margin: 0;
+    color: white;
+}
+
+.photoTile{
+    text-align: center;
+    display: inline-block;
+    border: 2px black solid;
+    margin: 2em ;
+    background-color: #f9e371;
+    border-radius: 3em;
+    overflow: hidden;
+    
+}
+
+
+.pokeImage{
+    width: 28vw;
+    height: 400px;
+}
+
+/* .pokeType{
+    display: flex;
+} */
+
+.pokeName{
+    background-color: red;
+}
+
+p{
+ display: inline-block;
+ margin: .2rem 1rem;
+ background-color:cadetblue;
+ border: 0.1rem;
+ border-radius: .5rem;
+ overflow: hidden;
+ padding: .25rem 1rem;
+}
