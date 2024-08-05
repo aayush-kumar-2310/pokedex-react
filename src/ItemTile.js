@@ -27,7 +27,7 @@ const Tile = (props) => {
 	const [type, setType] = useState([]);
 
 	useEffect(() => {
-		fetch(`https://pokeapi.co/api/v2/pokemon/${props.id}`).then((response) =>
+		fetch(`https://pokeapi.co/api/v2/items/${props.id}`).then((response) =>
 			response.json().then((data) => {
 				setType(data.types);
 				console.log(type);
@@ -40,7 +40,7 @@ const Tile = (props) => {
 			<h1 className="pokeName">{props.obj.name.toUpperCase()}</h1>
 			<img
 				className="pokeImage"
-				src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${props.id}.png`}
+				src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/${props.name}.png`}
 			></img>
 			<div>
 				{type.map((t) => {
